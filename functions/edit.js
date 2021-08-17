@@ -16,10 +16,11 @@ exports.handler = async function (event, context, callback) {
   const body = JSON.parse(event.body);
 
   try {
-    users.update(body.userId, body.data);
+    const updatedUsers = await users.update(body.userId, body.data);
 
     return {
       statusCode: 200,
+      body: JSON.stringify(updatedUsers),
     };
   } catch (e) {
     console.error(e);
