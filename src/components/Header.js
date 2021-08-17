@@ -12,7 +12,10 @@ const Header = () => {
           <Link to='/upload'>
             <div className='upload' />
           </Link>
-          <img className='personal' src='https://i.imgur.com/QwZod6m.png' />
+          <img
+            className='personal'
+            src='https://pbs.twimg.com/profile_images/1155140361213349888/LOGLJdUu.png'
+          />
         </div>
       </div>
     </div>
